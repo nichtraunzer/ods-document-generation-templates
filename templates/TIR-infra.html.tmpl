@@ -211,6 +211,7 @@
         </table>
 
         <h3>Diagnostic Result</h3>
+        <h2>Tuning Version</h2>
                 
         {{#data.repo.data.tests.installation.testResults.testsuites}}
         <p>Test suite "{{name}}" ran {{tests}} tests of which {{failed}} tests have failed.</p>
@@ -236,7 +237,7 @@
                 <td class="lean">N/A</td>
             </tr>
             {{/if}}
-            
+
             {{/each}}
         </table>
         {{/data.repo.data.tests.installation.testResults.testsuites}}
