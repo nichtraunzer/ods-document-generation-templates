@@ -224,10 +224,19 @@
                 <th class="lean">Pass / Fail</th>
             </tr>
             {{#each testcases}}
+            
+            {{#if name}}
             <tr>
                 <td class="content-wrappable">{{name}}</td>
                 <td class="lean">Pass</td>
             </tr>
+            {{else}}
+            <tr>
+                <td class="content-wrappable">N/A</td>
+                <td class="lean">N/A</td>
+            </tr>
+            {{/if}}
+            
             {{/each}}
         </table>
         {{/data.repo.data.tests.installation.testResults.testsuites}}
