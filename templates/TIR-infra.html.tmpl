@@ -211,21 +211,21 @@
         </table>
 
         <h3>Diagnostic Result</h3>
-        <h2>Tuning Version</h2>
-                
-        {{#data.repo.data.tests.installation.testResults.testsuites}}
-        <p>Test suite "{{name}}" ran {{tests}} tests of which {{failed}} tests have failed.</p>
-        {{/data.repo.data.tests.installation.testResults.testsuites}}
-        
+
         {{#each data.repo.data.tests.installation.testResults.testsuites}}
+        <h4>Test suite "{{name}}"</h4>
+        <p>Test suite "{{name}}" ran {{tests}} tests of which {{failed}} tests have failed.</p>
+        
         {{#if testcases}}
         <table>
             <tr>
+                <th class="lean">Test Number</th>
                 <th class="lean">Test Description</th>
                 <th class="lean">Pass / Fail</th>
             </tr>
             {{#each testcases}}
             <tr>
+                <td class="lean">{{@index}}</td>
                 <td class="content-wrappable">{{name}}</td>
                 <td class="lean">Pass</td>
             </tr>
