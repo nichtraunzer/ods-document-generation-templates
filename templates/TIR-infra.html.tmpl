@@ -219,19 +219,17 @@
         {{#if testcases}}
         <table>
             <tr>
-                <th class="lean">Test Number</th>
                 <th class="lean">Test Description</th>
                 <th class="lean">Pass / Fail</th>
             </tr>
             {{#each testcases}}
             <tr>
-                <td class="lean">{{@index}}</td>
                 <td class="content-wrappable">{{name}}</td>
                 <td class="lean">Pass</td>
             </tr>
             {{/each}}
         </table>
-        {{else}}           
+        <!-- {{else}}           
         <table>
         <tr>
             <th class="lean">Test Description</th>
@@ -241,7 +239,7 @@
             <td class="content-wrappable">N/A</td>
             <td class="lean">N/A</td>
         </tr>
-        </table>
+        </table> -->
         {{/if}}
         {{/each}}
 
